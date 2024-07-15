@@ -8,8 +8,4 @@
       "path": "./tsconfig.node.json"
     }
   ],
-  "compilerOptions": {
-    "types": ["jest", "@testing-library/jest-dom"]
-  },
-  "include": ["src", "setupTests.ts"],
 }
