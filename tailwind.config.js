@@ -8,10 +8,11 @@ export default {
     extend: {
       colors: {
         "primaryColor": "##A49889",
-        "secondaryColor": "#706456",
-        "terciaryColor": "#3E3326",
+        "secondaryColor": "#232920",
+        "terciaryColor": "#53330c",
         "darkColor": "#0C0E0B",
         "lightColor": "#DBDAD8",
+        "ultraLightColor": "#ffffff1a",
         "contrastColor": "#F7CA18"
       },
       fontFamily: {
