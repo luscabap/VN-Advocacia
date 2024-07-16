@@ -1,5 +1,5 @@
 import { Title } from "../Title";
-import escritorio from "/public/assets/escritorio.png"
+import escritorio from "/assets/escritorio.png"
 
 export const AboutUs = () => {
   return (

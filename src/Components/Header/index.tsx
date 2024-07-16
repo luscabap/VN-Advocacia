@@ -10,7 +10,7 @@ const iconProps = {
 }
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClickMenu = () => {
     setIsOpen(true);
