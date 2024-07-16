@@ -1,4 +1,5 @@
 import { AboutUs } from "./Components/About";
+import { FormContact } from "./Components/FormContact";
 import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
 import banner from "/assets/s1.png";
@@ -11,6 +12,7 @@ function App() {
       <div className="px-4">
         <Home />
         <AboutUs />
+        <FormContact />
       </div>
     </>
   )
