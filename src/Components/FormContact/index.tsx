@@ -1,14 +1,8 @@
 import { useState } from "react";
 import { Title } from "../Title";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { IoLogoWhatsapp } from "react-icons/io";
-
+import { SmallNumbersContact } from "../SmallNumbersContact";
 // import emailjs from "@emailjs/browser";
 
-const iconProps = {
-  size: 20,
-  color: "#232920"
-}
 
 export const FormContact = () => {
   const [nome, setNome] = useState("");
@@ -91,14 +85,7 @@ export const FormContact = () => {
           Enviar
         </button>
       </form>
-      <div className="flex items-center justify-start gap-1 font-bold mb-3">
-        <BsFillTelephoneFill {...iconProps}/>
-        <h4>Telefone: XXXXX-XXXX</h4>
-      </div>
-      <div className="flex items-center justify-start gap-1 font-bold">
-        <IoLogoWhatsapp {...iconProps}/>
-        <h4>WhatsApp: XXXXX-XXXX</h4>
-      </div>
+      <SmallNumbersContact iconSize={20} iconColor="#232920"/>
     </>
   );
 };

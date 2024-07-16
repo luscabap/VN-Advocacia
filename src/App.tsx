@@ -1,4 +1,5 @@
 import { AboutUs } from "./Components/About";
+import { Footer } from "./Components/Footer";
 import { FormContact } from "./Components/FormContact";
 import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
@@ -14,7 +15,8 @@ function App() {
         <AboutUs />
         <FormContact />
       </div>
-    </>
+      <Footer />
+  </>
   )
 }
 
