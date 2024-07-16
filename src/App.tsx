@@ -1,7 +1,7 @@
 import { AboutUs } from "./Components/About";
 import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
-import banner from "/public/assets/s1.png";
+import banner from "/assets/s1.png";
 
 function App() {
   return (
