@@ -11,7 +11,7 @@ export const Footer = () => {
         <SmallNumbersContact iconSize={15} iconColor="#DBDAD8"/>
       </div>
       <p className="text-sm border-solid border-t-[1px] border-ultraLightColor w-full pt-5 text-center font-thin">Todos os direitos reservados - VN Advocacia 2024 &copy;</p>
-      <code className="text-sm font-light ">Site desenvolvido por <a href="https://portfolio-luscabap.vercel.app/" target="_blank"></a><abbr title="lucasbaptistasilva.dev@gmail.com">Lucas Baptista</abbr></code>
+      <code className="text-sm font-light ">Site desenvolvido por <a href="https://portfolio-luscabap.vercel.app/" target="_blank"><abbr title="lucasbaptistasilva.dev@gmail.com">Lucas Baptista</abbr></a></code>
     </footer>
   )
 }
