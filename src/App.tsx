@@ -1,4 +1,6 @@
 import { AboutUs } from "./Components/About";
+import { Expertise } from "./Components/Expertise";
+import { FindUs } from "./Components/FindUs";
 import { Footer } from "./Components/Footer";
 import { FormContact } from "./Components/FormContact";
 import { Header } from "./Components/Header";
@@ -13,7 +15,9 @@ function App() {
       <div className="px-4">
         <Home />
         <AboutUs />
+        <Expertise />
         <FormContact />
+        <FindUs />
       </div>
       <Footer />
   </>
