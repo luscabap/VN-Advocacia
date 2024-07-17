@@ -1,52 +1,112 @@
 import { GoLaw } from "react-icons/go";
 import { IoMdCloseCircle } from "react-icons/io";
-import { v4 as uuidv4 } from "uuid"
+import { v4 as uuidv4 } from "uuid";
 import { Contact } from "../Contact";
+import { motion } from "framer-motion";
 
 interface IMenuProps {
-  closeMenu: () => void
+  toggleMenu: () => void;
 }
 
 const itensNav = [
   {
     id: uuidv4(),
     texto: "Home",
-    href: "#"
+    href: "#",
   },
   {
     id: uuidv4(),
     texto: "Quem somos nós?",
-    href: "#"
+    href: "#",
   },
   {
     id: uuidv4(),
     texto: "Área de atuação",
-    href: "#"
+    href: "#",
   },
   {
     id: uuidv4(),
     texto: "Contato",
-    href: "#"
+    href: "#",
   },
-]
+];
 
-export const Menu = ({ closeMenu }: IMenuProps) => {
+
+
+export const Menu = ({ toggleMenu }: IMenuProps) => {
+  const menuVariants = {
+    initial: {
+      scaleX: 0,
+    },
+    animate: {
+      scaleX: 1,
+      transition: {
+        duration: 0.3,
+        ease: [0.12, 0, 0.39, 0],
+      },
+    },
+    exit: {
+      scaleX: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+
+  const itensVariants = {
+    initial: {
+      x: "5vh",
+      transition: {
+        duration: 0.4
+      }
+    },
+    open: {
+      x: 0,
+      transition: {
+        duration: 0.6
+      }
+    }
+  }
+
   return (
-    <nav className="bg-secondaryColor absolute top-0 w-1/2 h-screen px-4">
-      <button className="w-full flex justify-end items-center my-2" onClick={closeMenu}>
-        <IoMdCloseCircle size={28} />
-      </button>
-      <h3 className="flex items-center justify-center gap-2 text-bold text-contrastColor text-xl mt-4">VN Advocacia <GoLaw size={20}/></h3>
-      <ul className="flex flex-col gap-4 my-8">
-        {itensNav.map(item => (
-          <li key={item.id} className="mb-2 w-full">
-            <a href={item.href} className="uppercase text-lightColor border-solid border-ultraLightColor border-b-[1px] pb-2 block">
-              {item.texto}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <Contact iconColor="#DBDAD8" iconSize={25}/>
-    </nav>
-  )
-}
+    <motion.div
+      variants={menuVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="bg-secondaryColor absolute top-0 w-1/2 h-screen px-4 origin-left"
+    >
+      <motion.nav
+        variants={itensVariants}
+        initial="initial"
+        animate="open"
+      >
+        <div className="overflow-hidden">
+        <button
+          className="w-full flex justify-end items-center my-2"
+          onClick={toggleMenu}
+        >
+          <IoMdCloseCircle size={28} />
+        </button>
+        <h3 className="flex items-center justify-center gap-2 text-bold text-contrastColor text-xl mt-4">
+          VN Advocacia <GoLaw size={20} />
+        </h3>
+        <ul className="flex flex-col gap-4 my-8">
+          {itensNav.map((item) => (
+            <li key={item.id} className="mb-2 w-full">
+              <a
+                href={item.href}
+                className="uppercase text-lightColor border-solid border-ultraLightColor border-b-[1px] pb-2 block"
+              >
+                {item.texto}
+              </a>
+            </li>
+          ))}
+        </ul>
+        </div>
+        <Contact iconColor="#DBDAD8" iconSize={25} />
+      </motion.nav>
+    </motion.div>
+  );
+};
