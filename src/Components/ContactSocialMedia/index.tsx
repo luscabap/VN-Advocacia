@@ -6,7 +6,7 @@ interface IContactProps {
   iconColor: string,
 }
 
-export const Contact = ({ iconSize, iconColor }: IContactProps) => {
+export const ContactSocialMedia = ({ iconSize, iconColor }: IContactProps) => {
   return (
     <div className="flex justify-evenly items-center">
         <a href="https://www.instagram.com/vnadvocacia_/" target="_blank">

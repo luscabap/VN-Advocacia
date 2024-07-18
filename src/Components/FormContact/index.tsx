@@ -39,7 +39,7 @@ export const FormContact = () => {
 
   return (
     <>
-      <Title text="Entre em contato conosco" />
+      <Title text="Entre em contato conosco" id="entre-em-contato"/>
       <form className="flex flex-col" onSubmit={handleSubmitForm}>
         <div className="flex flex-col gap-4 my-4">
           <input

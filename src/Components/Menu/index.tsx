@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import { GoLaw } from "react-icons/go";
 import { IoMdCloseCircle } from "react-icons/io";
 import { v4 as uuidv4 } from "uuid";
-import { Contact } from "../Contact";
-import { motion } from "framer-motion";
+import { ContactSocialMedia } from "../ContactSocialMedia";
+import { Link } from "react-scroll";
 
 interface IMenuProps {
   toggleMenu: () => void;
@@ -12,26 +13,29 @@ const itensNav = [
   {
     id: uuidv4(),
     texto: "Home",
-    href: "#",
+    idAncora: "home",
   },
   {
     id: uuidv4(),
     texto: "Quem somos nós?",
-    href: "#",
+    idAncora: "quem-somos-nos",
   },
   {
     id: uuidv4(),
     texto: "Área de atuação",
-    href: "#",
+    idAncora: "area-atuacao",
   },
   {
     id: uuidv4(),
-    texto: "Contato",
-    href: "#",
+    texto: "Entre em Contato",
+    idAncora: "entre-em-contato",
+  },
+  {
+    id: uuidv4(),
+    texto: "Encontre-nos",
+    idAncora: "encontre-nos",
   },
 ];
-
-
 
 export const Menu = ({ toggleMenu }: IMenuProps) => {
   const menuVariants = {
@@ -67,7 +71,7 @@ export const Menu = ({ toggleMenu }: IMenuProps) => {
         duration: 0.6
       }
     }
-  }
+  };
 
   return (
     <motion.div
@@ -94,18 +98,22 @@ export const Menu = ({ toggleMenu }: IMenuProps) => {
         </h3>
         <ul className="flex flex-col gap-4 my-8">
           {itensNav.map((item) => (
-            <li key={item.id} className="mb-2 w-full">
-              <a
-                href={item.href}
+            <li key={item.id} className="mb-2 w-full ">
+              <Link
+                to={item.idAncora}
+                smooth={true}
+                offset={-160} 
+                duration={500} 
+                spy={true} 
                 className="uppercase text-lightColor border-solid border-ultraLightColor border-b-[1px] pb-2 block"
               >
                 {item.texto}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
         </div>
-        <Contact iconColor="#DBDAD8" iconSize={25} />
+        <ContactSocialMedia iconColor="#DBDAD8" iconSize={25} />
       </motion.nav>
     </motion.div>
   );

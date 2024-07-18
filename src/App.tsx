@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <img src={banner} alt="Banner de advocacia"/>
+      <img src={banner} alt="Banner de advocacia" className="pt-36" id="home"/>
       <div className="px-4">
         <Home />
         <AboutUs />

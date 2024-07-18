@@ -16,7 +16,7 @@ const itemsCheck = [
 export const Expertise = () => {
   return (
     <div>
-      <Title text="Área de atuação"/>
+      <Title text="Área de atuação" id="area-atuacao"/>
       <div className="flex flex-col gap-3">
         <h3 className="italic text-secondaryColor">Por que contratar a VN Advocacia?</h3>
         <p className="indent-5">O direito empresarial é uma <strong>área essencial</strong> para qualquer empresário e seu empreendimento, pois envolve regulamentações e diretrizes que visam garantir a <strong>sustentabilidade</strong> e o <strong>sucesso dos negócios</strong>.</p>
