@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="z-40 pt-40 flex items-center justify-center">
+      <div className="z-40 pt-36 flex items-center justify-center">
         <CarouselImages />
       </div>
       <div className="px-4">
