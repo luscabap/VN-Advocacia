@@ -18,7 +18,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="bg-darkColor rounded-b-lg fixed w-full h-36 flex justify-between items-center">
+    <header className="bg-darkColor rounded-b-lg fixed w-full h-36 flex justify-between items-center z-50">
       <RiMenu2Line {...iconProps} onClick={toggleMenu}/>
       <AnimatePresence>
       {isOpen && (

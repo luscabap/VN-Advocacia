@@ -79,7 +79,7 @@ export const Menu = ({ toggleMenu }: IMenuProps) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="bg-secondaryColor absolute top-0 w-1/2 h-screen px-4 origin-left"
+      className="bg-secondaryColor fixed top-0 w-1/2 h-screen px-4 origin-left z-50"
     >
       <motion.nav
         variants={itensVariants}
