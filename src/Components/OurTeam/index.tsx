@@ -1,5 +1,7 @@
+import { TeamMember } from "../TeamMember";
 import { Title } from "../Title";
 import time from "/assets/time.png";
+import { dataTeamMember } from "./dataTeamMember";
 
 export const OurTeam = () => {
   return (
@@ -10,6 +12,21 @@ export const OurTeam = () => {
       <div className="flex flex-col items-center justify-center my-3">
         <h5 className="text-secondaryColor font-destaque">Equipe VN Advocacia</h5>
         <img src={time} alt="Imagem da equipe VN Advocacia" />
+        <div className=" w-full p-4 my-4 flex flex-col gap-8 lg:w-3/5">
+        <h4 className="uppercase font-bold">Membros</h4>
+          {
+            dataTeamMember.map(member => (
+              <TeamMember 
+                key={member.id}
+                funcao={member.funcao}
+                img={member.img}
+                nome={member.nome}
+                primario={member.primario}
+                especialidade={member.especialidade}
+              />
+            ))
+          }
+        </div>
       </div>
     </div>
   )
