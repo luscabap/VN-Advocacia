@@ -16,8 +16,8 @@ export default {
         "contrastColor": "#F7CA18"
       },
       fontFamily: {
-        destaque: ['Amita', 'cursive']
-      }
+        destaque: ['amita', 'cursive']
+      },
     },
   },
   plugins: [],

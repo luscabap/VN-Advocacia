@@ -26,7 +26,7 @@ export const Expertise = () => {
         <p className="indent-5">O direito empresarial é uma <strong>área essencial</strong> para qualquer empresário e seu empreendimento, pois envolve regulamentações e diretrizes que visam garantir a <strong>sustentabilidade</strong> e o <strong>sucesso dos negócios</strong>.</p>
         <p className="indent-5">Proporcionando segurança jurídica, evitando problemas legais e garantindo um ambiente saudável e propício para o progresso e crescimento sustentável</p>
       </div>
-      <div className="flex flex-col gap-8 my-8">
+      <div className="flex flex-col gap-8 my-8 lg:w-1/2 lg:mx-auto lg:text-xl">
         <div className="border-2 border-solid border-darkColor rounded-xl p-4">
           <div className="flex flex-col items-center justify-center gap-2 mb-4">
             <GoGear size={50}/>

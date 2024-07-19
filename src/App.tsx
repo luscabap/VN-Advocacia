@@ -16,7 +16,7 @@ function App() {
       <div className="z-40 pt-36 flex items-center justify-center">
         <CarouselImages />
       </div>
-      <div className="px-4 lg:px-28 lg:text-xl">
+      <div className="px-4 lg:px-20 lg:text-xl mt-8">
         <Home />
         <Expertise />
         <AboutUs />

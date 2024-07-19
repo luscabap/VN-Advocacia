@@ -20,7 +20,7 @@ export const SmallNumbersContact = ({ iconColor, iconSize }: ISmallNumberContact
           <h4>WhatsApp: (86) 98168-8351</h4>
         </a>
       </div>
-      <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
+      <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base text-xs">
         <MdEmail color={iconColor} size={iconSize}/>
         <h4>E-mail: vnadvocacia.assessoriajuridica@gmail.com</h4>
       </div>

@@ -5,8 +5,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Amita';
-  src: url("./fonts/Amita/amita.ttf") format("ttf");
+  font-family: 'amita';
+  src: url("./fonts/Amita/amita.ttf") format("opentype");
+  font-style: normal;
+  font-display: swap;
 };
 
 body {

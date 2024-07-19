@@ -9,7 +9,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 export const CarouselImages = () => {
   return (
       <Swiper
-        spaceBetween={50}
+        spaceBetween={10}
         centeredSlides={true}
         slidesPerView={1}
         modules={[ Autoplay, Pagination ]}
@@ -18,6 +18,7 @@ export const CarouselImages = () => {
           delay: 4000,
         }}
         pagination={true}
+        className='max-w-[900px]'
     >
       <SwiperSlide><img src={banner1}/></SwiperSlide>
       <SwiperSlide><img src={bannerPremio}/></SwiperSlide>

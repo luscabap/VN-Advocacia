@@ -15,9 +15,9 @@ export const TeamMember = ({ funcao, img, nome, primario, especialidade, nOab, e
     <img src={img} alt={`Imagem do membro da equipe ${nome}`} className="w-32 h-40 rounded-sm"/>
     <div>
       <h5 className="text-contrastColor underline text-lg">{nome}</h5>
-      <p className="font-bold text-primaryColor">{funcao} {nOab ? " - N° OAB: 12550" : null}</p>
-      { especialidade && <p className="text-lightColor">Especialidade: {especialidade}</p> }
-      { email && <p className="text-lightColor">{email}</p> }
+      <p className="font-bold text-primaryColor text-sm">{funcao} {nOab ? " - N° OAB: 12550" : null}</p>
+      { especialidade && <p className="text-lightColor text-sm">Especialidade: {especialidade}</p> }
+      { email && <p className="text-lightColor text-xs">{email}</p> }
     </div>
     </div>
   )
