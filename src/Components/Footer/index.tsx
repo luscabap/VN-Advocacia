@@ -8,7 +8,7 @@ export const Footer = () => {
       <div>
         <address className="text-sm text-center italic mb-1 lg:text-xl">Rua Riachuelo, 514 - Edifício Angélico, Sala 04 | Centro - Parnaíba / PI</address>
       </div>
-      <div className="flex text-xs gap-4">
+      <div className="flex items-center justify-center text-xs gap-4">
         <SmallNumbersContact iconSize={15} iconColor="#DBDAD8"/>
       </div>
       <p className="text-sm border-solid border-t-[1px] border-ultraLightColor w-full pt-5 text-center font-thin lg:text-xl">Todos os direitos reservados &copy; 2024 - VN Advocacia Assessoria e Consutoria Jurídica. CNPJ: 21.596.578/0001-22 </p>

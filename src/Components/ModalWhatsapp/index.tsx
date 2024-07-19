@@ -38,7 +38,9 @@ export const ModalWhatsApp = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="fixed z-50 bottom-20 right-2 bg-primaryColor px-5 pb-3 pt-1 rounded-lg shadow-2xl h-44 flex flex-col items-center justify-evenly border-[1px] border-solid border-darkColor"
+          className="fixed z-50 bottom-20 right-2 bg-primaryColor px-5 pb-3 pt-1 rounded-lg shadow-2xl h-44 flex flex-col items-center justify-evenly border-[1px] border-solid border-darkColor
+          2xl:text-2xl 2xl:h-60 2xl:bottom-32
+          "
         >
           <h5 className="uppercase text-darkColor font-bold">
             Contato via WhatsApp
@@ -58,7 +60,7 @@ export const ModalWhatsApp = () => {
         </motion.div>
       )}
       <div
-        className="bg-primaryColor rounded-full fixed z-50 bottom-2 right-2 p-3 border-2 border-solid border-darkColor"
+        className="bg-primaryColor rounded-full fixed z-50 bottom-2 right-2 p-3 border-2 border-solid border-darkColor 2xl:p-6 cursor-pointer"
         onClick={toggleContato}
       >
         {contatoIsOpen ? (

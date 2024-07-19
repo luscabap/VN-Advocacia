@@ -14,7 +14,7 @@ export const FindUs = () => {
       </div>
       <div className="flex items-start justify-center mb-6 mx-auto gap-2">
         <FaMapMarkerAlt  size={20} color="red"/>
-        <address className="text-base text-darkColor">Rua Riachuelo, 514 - Edifício Angélico, Sala 04 | Centro - Parnaíba / PI</address>
+        <address className="text-base text-darkColor 2xl:text-2xl">Rua Riachuelo, 514 - Edifício Angélico, Sala 04 | Centro - Parnaíba / PI</address>
       </div>
     </div>
   )

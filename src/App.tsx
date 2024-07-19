@@ -13,10 +13,13 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="z-40 pt-36 flex items-center justify-center">
+      <div className="z-40 pt-36 flex items-center justify-center" id="home">
         <CarouselImages />
       </div>
-      <div className="px-4 lg:px-20 lg:text-xl mt-8">
+      <div className="px-4 mt-8
+        lg:px-20  lg:text-xl 
+        2xl:px-80 2xl:text-2xl"
+      >
         <Home />
         <Expertise />
         <AboutUs />

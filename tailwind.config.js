@@ -18,6 +18,9 @@ export default {
       fontFamily: {
         destaque: ['amita', 'cursive']
       },
+      fontSize: {
+        "3xl": "2.125rem"
+      }
     },
   },
   plugins: [],

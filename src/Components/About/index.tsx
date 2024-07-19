@@ -3,7 +3,7 @@ import escritorio from "/assets/escritorio.png"
 
 export const AboutUs = () => {
   return (
-    <article className="flex flex-col items-start justify-start gap-6 my-4">
+    <article className="flex flex-col items-start justify-start gap-6 my-4 2xl:text-2xl">
       <Title text="Quem somos nós?" id="quem-somos-nos"/>
       <p>Com <span className="font-bold">registro n° x na Ordem dos Advogados do Brasil - Seção do Piauí</span>, o escritório VN Advocacia busca entender e resolver os anseios e necessidades de todos os seus clientes, de forma personalizada,eficaz e precisa.</p>
       <p>Para a VN Advocacia, <span className="font-bold">priorizar excelência no atendimento e excepcionalidade nos serviços</span> - Sempre amparado pela ética e dignidade - é a principal forma de ser um escritório credibilizado e admirado no mercado a mais de X anos.</p>
