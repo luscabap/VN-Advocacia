@@ -1,5 +1,6 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 
 interface ISmallNumberContactProps {
   iconSize: number,
@@ -8,15 +9,21 @@ interface ISmallNumberContactProps {
 
 export const SmallNumbersContact = ({ iconColor, iconSize }: ISmallNumberContactProps) => {
   return (
-    <>
-      <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
-        <BsFillTelephoneFill color={iconColor} size={iconSize}/>
-        <h4>Telefone: XXXXX-XXXX</h4>
+    <div className="flex flex-col">
+      <div>
+        <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
+          <BsFillTelephoneFill color={iconColor} size={iconSize}/>
+          <h4>Telefone: (86) 98168-8351</h4>
+        </div>
+        <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
+          <IoLogoWhatsapp color={iconColor} size={iconSize}/>
+          <h4>WhatsApp: (86) 98168-8351</h4>
+        </div>
       </div>
       <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
-        <IoLogoWhatsapp color={iconColor} size={iconSize}/>
-        <h4>WhatsApp: XXXXX-XXXX</h4>
+        <MdEmail color={iconColor} size={iconSize}/>
+        <h4>E-mail: vnadvocacia.assessoriajuridica@gmail.com</h4>
       </div>
-    </>
+    </div>
   )
 }
