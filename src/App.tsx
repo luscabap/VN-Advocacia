@@ -6,6 +6,7 @@ import { Footer } from "./Components/Footer";
 import { FormContact } from "./Components/FormContact";
 import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
+import { ModalWhatsApp } from "./Components/ModalWhatsapp";
 import { OurTeam } from "./Components/OurTeam";
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <FormContact />
         <FindUs />
       </div>
+      <ModalWhatsApp />
       <Footer />
     </div>
   );

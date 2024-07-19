@@ -12,7 +12,7 @@ export const ContactSocialMedia = ({ iconSize, iconColor }: IContactProps) => {
         <a href="https://www.instagram.com/vnadvocacia_/" target="_blank">
           <FaInstagram size={iconSize}  color={iconColor}/>
         </a>
-        <a href="#" target="_blank" className=" w-32 flex justify-center py-1 rounded-md">
+        <a href="https://wa.me/558681688351?text=Olá,+gostaria+de+informações+sobre+os+seus+serviços,+por+favor." target="_blank" className=" w-32 flex justify-center py-1 rounded-md">
           <FaWhatsapp size={iconSize}  color={iconColor}/>
         </a>
         <a href="https://linktr.ee/vnadvogados?utm_source=linktree_admin_share" target="_blank">

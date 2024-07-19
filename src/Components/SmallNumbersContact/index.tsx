@@ -15,10 +15,10 @@ export const SmallNumbersContact = ({ iconColor, iconSize }: ISmallNumberContact
           <BsFillTelephoneFill color={iconColor} size={iconSize}/>
           <h4>Telefone: (86) 98168-8351</h4>
         </div>
-        <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
+        <a className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base" href="https://wa.me/55869816883515">
           <IoLogoWhatsapp color={iconColor} size={iconSize}/>
           <h4>WhatsApp: (86) 98168-8351</h4>
-        </div>
+        </a>
       </div>
       <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
         <MdEmail color={iconColor} size={iconSize}/>
