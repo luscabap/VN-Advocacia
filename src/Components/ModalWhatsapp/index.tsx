@@ -50,7 +50,7 @@ export const ModalWhatsApp = () => {
           </p>
           <a
             className="bg-lightColor p-2 rounded-2xl flex items-center justify-center gap-1"
-            href="https://wa.me/55869816883515"
+            href="https://wa.me/558681688351?text=Olá,+gostaria+de+informações+sobre+os+seus+serviços,+por+favor."
           >
             <FaWhatsapp size={20} color="#232920" />
             <p className="text-darkColor">
