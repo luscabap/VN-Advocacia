@@ -9,11 +9,11 @@ interface ISmallNumberContactProps {
 export const SmallNumbersContact = ({ iconColor, iconSize }: ISmallNumberContactProps) => {
   return (
     <>
-      <div className="flex items-center justify-start gap-1 font-bold mb-3">
+      <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
         <BsFillTelephoneFill color={iconColor} size={iconSize}/>
         <h4>Telefone: XXXXX-XXXX</h4>
       </div>
-      <div className="flex items-center justify-start gap-1 font-bold mb-3">
+      <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base">
         <IoLogoWhatsapp color={iconColor} size={iconSize}/>
         <h4>WhatsApp: XXXXX-XXXX</h4>
       </div>

@@ -1,9 +1,9 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from "/assets/img1.png";
-import img2 from "/assets/img2.png";
-import x from "/assets/s1.png";
+import banner1 from "/assets/banner1.png";
+import bannerEquipe from "/assets/bannerEquipe.png";
+import bannerPremio from "/assets/bannerPremio.png";
 import { Autoplay, Pagination } from "swiper/modules";
 
 export const CarouselImages = () => {
@@ -19,9 +19,9 @@ export const CarouselImages = () => {
         }}
         pagination={true}
     >
-      <SwiperSlide><img src={img1}/></SwiperSlide>
-      <SwiperSlide><img src={img2}/></SwiperSlide>
-      <SwiperSlide><img src={x}/></SwiperSlide>
+      <SwiperSlide><img src={banner1}/></SwiperSlide>
+      <SwiperSlide><img src={bannerPremio}/></SwiperSlide>
+      <SwiperSlide><img src={bannerEquipe}/></SwiperSlide>
     </Swiper>
   )
 }

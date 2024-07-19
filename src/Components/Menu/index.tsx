@@ -17,14 +17,20 @@ const itensNav = [
   },
   {
     id: uuidv4(),
+    texto: "Área de atuação",
+    idAncora: "area-atuacao",
+  },
+  {
+    id: uuidv4(),
     texto: "Quem somos nós?",
     idAncora: "quem-somos-nos",
   },
   {
     id: uuidv4(),
-    texto: "Área de atuação",
-    idAncora: "area-atuacao",
+    texto: "Nosso time",
+    idAncora: "nosso-time",
   },
+
   {
     id: uuidv4(),
     texto: "Entre em Contato",

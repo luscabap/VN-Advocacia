@@ -6,23 +6,25 @@ import { Footer } from "./Components/Footer";
 import { FormContact } from "./Components/FormContact";
 import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
+import { OurTeam } from "./Components/OurTeam";
 function App() {
   return (
-    <>
+    <div>
       <Header />
       <div className="z-40 pt-36 flex items-center justify-center">
         <CarouselImages />
       </div>
-      <div className="px-4">
+      <div className="px-4 lg:px-28 lg:text-xl">
         <Home />
-        <AboutUs />
         <Expertise />
+        <AboutUs />
+        <OurTeam />
         <FormContact />
         <FindUs />
       </div>
       <Footer />
-  </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
