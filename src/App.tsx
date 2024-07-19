@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import { AboutUs } from "./Components/About";
 import { CarouselImages } from "./Components/CarouselImages";
 import { Expertise } from "./Components/Expertise";
@@ -23,7 +24,9 @@ function App() {
         <FormContact />
         <FindUs />
       </div>
-      <ModalWhatsApp />
+      <AnimatePresence>
+        <ModalWhatsApp />
+      </AnimatePresence>
       <Footer />
     </div>
   );

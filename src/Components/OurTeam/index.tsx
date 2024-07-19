@@ -23,6 +23,8 @@ export const OurTeam = () => {
                 nome={member.nome}
                 primario={member.primario}
                 especialidade={member.especialidade}
+                nOab={member.nOab}
+                email={member.email}
               />
             ))
           }

@@ -80,7 +80,7 @@ export const Menu = ({ toggleMenu }: IMenuProps) => {
   };
 
   return (
-    <motion.div
+    <motion.aside
       variants={menuVariants}
       initial="initial"
       animate="animate"
@@ -121,6 +121,6 @@ export const Menu = ({ toggleMenu }: IMenuProps) => {
         </div>
         <ContactSocialMedia iconColor="#DBDAD8" iconSize={25} />
       </motion.nav>
-    </motion.div>
+    </motion.aside>
   );
 };

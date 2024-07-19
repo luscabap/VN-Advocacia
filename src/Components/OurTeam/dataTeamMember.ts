@@ -18,7 +18,9 @@ export const dataTeamMember = [
     primario: true,
     nome: "Dr. Virgílio Neris Machado Neto",
     funcao: "Advogado",
-    especialidade: "Direito Imobiliário, Cível e Empresarial"
+    especialidade: "Direito Imobiliário, Cível e Empresarial",
+    nOab: "6644",
+    email: "vnadv@hotmail.com"
   },
   {
     id: uuidv4(),
@@ -26,7 +28,9 @@ export const dataTeamMember = [
     primario: false,
     nome: "Dr. Francisco Eudes Braga Lima",
     funcao: "Advogado",
-    especialidade: "Direito Civil e Empresarial"
+    especialidade: "Direito Civil e Empresarial",
+    nOab: "12550",
+    email: "f.eudesbraga@hotmail.com"
   },
   {
     id: uuidv4(),
