@@ -26,16 +26,19 @@ Tecnologicamente, o site foi altamente componentizado para maximizar o reaprovei
 ## 🖼️ Layout
 
 _MOBILE_
+
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/mobile_01.png)
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/mobile_02.png)
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/mobile_03.png)
 
 _TABLET_
+
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/tablet_01.png)
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/tablet_02.png)
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/tablet_03.png)
 
 _WEB_
+
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/web_01.png)
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/web_02.png)
 ![GK1](https://github.com/luscabap/VN-Advocacia/blob/main/public/web_03.png)
