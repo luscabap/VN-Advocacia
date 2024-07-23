@@ -16,7 +16,7 @@ export default {
         "contrastColor": "#F7CA18"
       },
       fontFamily: {
-        destaque: ['amita', 'cursive']
+        
       },
       fontSize: {
         "3xl": "2.125rem"

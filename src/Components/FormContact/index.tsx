@@ -80,7 +80,7 @@ export const FormContact = () => {
         </div>
         <button 
           type="submit"
-          className="bg-secondaryColor w-24 mx-auto font-destaque rounded-xl p-2 text-white mb-4
+          className="bg-secondaryColor w-24 mx-auto rounded-xl p-2 text-white mb-4
           2xl:w-40
           "
         >

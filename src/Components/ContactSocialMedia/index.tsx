@@ -1,4 +1,4 @@
-import { FaInstagram, FaWhatsapp  } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaLinkedin  } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 
 interface IContactProps {
@@ -17,6 +17,9 @@ export const ContactSocialMedia = ({ iconSize, iconColor }: IContactProps) => {
         </a>
         <a href="https://linktr.ee/vnadvogados?utm_source=linktree_admin_share" target="_blank">
           <SiLinktree size={iconSize}  color={iconColor}/>
+        </a>
+        <a href="https://www.linkedin.com/company/vn-advocacia-e-consultoria-jur%C3%ADdica/posts/?feedView=all" target="_blank">
+          <FaLinkedin size={iconSize}  color={iconColor}/>
         </a>
     </div>
   )

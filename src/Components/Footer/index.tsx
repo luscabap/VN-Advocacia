@@ -12,7 +12,9 @@ export const Footer = () => {
         <SmallNumbersContact iconSize={15} iconColor="#DBDAD8"/>
       </div>
       <p className="text-sm border-solid border-t-[1px] border-ultraLightColor w-full pt-5 text-center font-thin lg:text-xl">Todos os direitos reservados &copy; 2024 - VN Advocacia Assessoria e Consutoria Jurídica. CNPJ: 21.596.578/0001-22 </p>
-      <ContactSocialMedia iconColor="white" iconSize={15}/>
+      <div className="w-1/2">
+        <ContactSocialMedia iconColor="white" iconSize={15}/>
+      </div>
       <code className="text-xs font-light lg:text-base mt-8">Site desenvolvido por <a href="https://portfolio-luscabap.vercel.app/" target="_blank"><abbr title="lucasbaptistasilva.dev@gmail.com">Lucas Baptista</abbr></a></code>
     </footer>
   )
