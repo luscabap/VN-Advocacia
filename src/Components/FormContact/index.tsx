@@ -1,40 +1,42 @@
 import { useState } from "react";
 import { Title } from "../Title";
 import { SmallNumbersContact } from "../SmallNumbersContact";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 
 export const FormContact = () => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
+  const [celular, setCelular] = useState("");
   const [assunto, setAssunto] = useState("");
   const [mensagem, setMensagem] = useState("");
 
   const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("MAAAAAAUZ");
     setNome("");
     setEmail("");
     setAssunto("");
     setMensagem("");
+    setCelular("");
 
-    // const templateParams = {
-    //   from_name: nome,
-    //   assunto: assunto,
-    //   message: mensagem,
-    //   email: email
-    // }
+    const templateParams = {
+      from_name: nome,
+      assunto: assunto,
+      message: mensagem,
+      email: email,
+      celular: celular
+    }
 
-    // emailjs.send("service_z6n4ymq", "template_pbys7ld", templateParams, "96zS6kOjqprudpstJ")
-    // .then(success => {
-    //   console.log("Email enviado com sucesso", success);
-    //   setNome("");
-    //   setEmail("");
-    //   setAssunto("");
-    //   setMensagem("");
-    // }, (err) => {
-    //   console.log("erro", err);
-    // })
+    emailjs.send("service_9x3ub58", "template_icyf04k", templateParams, "pQuiflB0PLgJgh2Tw")
+    .then(success => {
+      console.log("Email enviado com sucesso", success);
+      setNome("");
+      setEmail("");
+      setAssunto("");
+      setMensagem("");
+    }, (err) => {
+      console.log("erro", err);
+    })
   };
 
   return (
@@ -56,6 +58,15 @@ export const FormContact = () => {
             placeholder="E-mail"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            required
+            className="w-full font-medium border-solid border-zinc-600 px-3 rounded-md border-[1px] focus:border-darkColor"
+          />
+
+          <input
+            type="tel"
+            placeholder="Número de celular"
+            onChange={(e) => setCelular(e.target.value)}
+            value={celular}
             required
             className="w-full font-medium border-solid border-zinc-600 px-3 rounded-md border-[1px] focus:border-darkColor"
           />

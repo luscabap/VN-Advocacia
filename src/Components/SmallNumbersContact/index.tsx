@@ -22,7 +22,7 @@ export const SmallNumbersContact = ({ iconColor, iconSize }: ISmallNumberContact
       </div>
       <div className="flex items-center justify-start gap-1 font-bold mb-3 lg:text-base text-xs 2xl:text-xl 2xl:justify-center">
         <MdEmail color={iconColor} size={iconSize}/>
-        <h4>E-mail: vnadvocacia.assessoriajuridica@gmail.com</h4>
+        <h4>E-mail: vnassessoriajuridicag@gmail.com</h4>
       </div>
     </div>
   )
