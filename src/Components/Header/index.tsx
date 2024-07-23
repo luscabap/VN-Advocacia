@@ -26,7 +26,7 @@ export const Header = () => {
           {isOpen && <Menu toggleMenu={toggleMenu} />}
         </AnimatePresence>
       </div>
-      <Logo />
+      <Logo primario={true}/>
       <NavDesktop />
       <FaCloudSun {...iconProps} className="2xl:w-1/6"/>
     </header>
