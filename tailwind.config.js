@@ -13,7 +13,8 @@ export default {
         "darkColor": "#0C0E0B",
         "lightColor": "#DBDAD8",
         "ultraLightColor": "#ffffff1a",
-        "contrastColor": "#F7CA18"
+        "contrastColor": "#F7CA18",
+        "backgroundModal": "#000000c4"
       },
       fontFamily: {
         
