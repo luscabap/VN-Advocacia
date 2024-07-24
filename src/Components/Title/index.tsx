@@ -1,4 +1,4 @@
-interface ITitleProps {
+export interface ITitleProps {
   text: string,
   id: string,
 }
