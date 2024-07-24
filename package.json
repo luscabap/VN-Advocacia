@@ -8,11 +8,14 @@
     "test": "jest",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^3.9.0",
+    "@storybook/addons": "^7.6.17",
     "framer-motion": "^11.3.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -24,7 +27,19 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@storybook/builder-vite": "^8.2.6",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.6",
+    "@storybook/addon-interactions": "^8.2.6",
+    "@storybook/addon-links": "^8.2.6",
+    "@storybook/addon-onboarding": "^8.2.6",
+    "@storybook/blocks": "^8.2.6",
+    "@storybook/react": "^8.2.6",
+    "@storybook/react-vite": "^8.2.6",
+    "@storybook/test": "^8.2.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-scroll": "^1.8.10",
@@ -36,7 +51,9 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.39",
+    "storybook": "^8.2.6",
     "tailwindcss": "^3.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
