@@ -1,6 +1,8 @@
-interface ITeamMemberProps {
+import logoNotFound from "/assets/membro.png"
+
+export interface ITeamMemberProps {
   primario: boolean,
-  img: string,
+  img?: string,
   nome: string,
   funcao: string,
   especialidade?: string,
@@ -8,7 +10,7 @@ interface ITeamMemberProps {
   email?: string
 }
 
-export const TeamMember = ({ funcao, img, nome, primario, especialidade, nOab, email }: ITeamMemberProps) => {
+export const TeamMember = ({ funcao, img = logoNotFound, nome, primario, especialidade, nOab, email }: ITeamMemberProps) => {
   return (
     <div className="bg-darkColor p-2">
       <div className={`flex ${primario ? "flex-row" : "flex-row-reverse"} 

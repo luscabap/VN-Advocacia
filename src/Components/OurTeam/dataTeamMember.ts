@@ -50,7 +50,6 @@ export const dataTeamMember = [
   },
   {
     id: uuidv4(),
-    img: "not-found",
     primario: true,
     nome: "Dr. Deusdedit Narciso de O.C. Filho",
     funcao: "Advogado",

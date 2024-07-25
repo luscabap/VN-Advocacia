@@ -13,6 +13,6 @@ type Story = StoryObj<typeof meta>;
 export const Exemplo: Story = {
   args: {
     id: "idgerado",
-    text: "teste"
+    text: "Esse é um título de exemplo"
   }
 }
