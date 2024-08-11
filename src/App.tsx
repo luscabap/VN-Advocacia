@@ -11,7 +11,7 @@ import { ModalWhatsApp } from "./Components/ModalWhatsapp";
 import { OurTeam } from "./Components/OurTeam";
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <div className="z-40 pt-36 flex items-center justify-center" id="home">
         <CarouselImages />
