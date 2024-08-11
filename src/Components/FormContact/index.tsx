@@ -36,8 +36,6 @@ export const FormContact = () => {
   }
 
   const OnSubmit: SubmitHandler<CorpoEmail> = (data) => {
-    console.log(data);
-
     const templateParams = {
       from_name: data.nome,
       assunto: data.assunto,
@@ -76,8 +74,6 @@ export const FormContact = () => {
       });
     }
   }, [isSubmitSuccessful, reset]);
-
-  console.log(errors);
 
   return (
     <div className="flex flex-col relative">
