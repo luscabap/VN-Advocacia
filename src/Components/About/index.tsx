@@ -3,7 +3,7 @@ import escritorio from "/assets/escritorio.png"
 
 export const AboutUs = () => {
   return (
-    <article className="flex flex-col items-start justify-start gap-6 my-4 2xl:text-2xl">
+    <article className="flex flex-col items-start justify-start gap-6 my-4">
       <Title text="Quem somos nós?" id="quem-somos-nos"/>
       <p>Com <span className="font-bold">sede na cidade de Parbaína - Piauí</span>, o escritório VN Advocacia busca entender e resolver os anseios e necessidades de todos os seus clientes, de forma personalizada,eficaz e precisa.</p>
       <p>Para a VN Advocacia, <span className="font-bold">priorizar excelência no atendimento e excepcionalidade nos serviços</span> - Sempre amparado pela ética e dignidade - é a principal forma de ser um escritório credibilizado e admirado no mercado a mais de 13 anos.</p>
@@ -15,8 +15,6 @@ export const AboutUs = () => {
       <p>O compromisso com a excelência e a paixão por fazer a diferença na vida das pessoas foram fundamentais para superarem os desafios e consolidarem a reputação da empresa.</p>
       <p>Hoje, a VN Advocacia é reconhecida não apenas por seu profissionalismo e competência, mas também por seu envolvimento na comunidade. Iniciativas sociais e pro bono tornaram-se parte integrante da filosofia da empresa.</p>
       <p>As metas para o futuro incluem a expansão para novas áreas de prática, a adoção de tecnologias inovadoras para aprimorar os serviços e o contínuo comprometimento com a educação jurídica. A VN Advocacia não apenas representa seus clientes nos tribunais, mas também defende os princípios que alicerçam uma sociedade justa e equitativa.</p>
-
-      <code className="bg-zinc-600">PEGAR IMAGENS DO ESCRITÓRIO VN ADVOCACIA</code>
       <img src={escritorio} alt="Imagem do escritório VN Advocacia"/>
     </article>
   )

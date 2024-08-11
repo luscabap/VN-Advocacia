@@ -11,7 +11,7 @@ export const OurTeam = () => {
       <h4 className="indent-4">A criação do time foi uma jornada estratégica, marcada por cuidadosa seleção, parcerias estratégicas e a busca por profissionais dedicados ao propósito da empresa.</h4>
       <div className="flex flex-col items-center justify-center my-3">
         <h5 className="text-secondaryColor">Equipe VN Advocacia</h5>
-        <img src={time} alt="Imagem da equipe VN Advocacia" />
+        <img src={time} alt="Imagem da equipe VN Advocacia" className="2xl:w-3/4"/>
         <div className="w-full flex-wrap p-4 my-4 flex flex-col gap-8 2xl:w-1/2">
         <h4 className="uppercase font-bold">Membros</h4>
           {

@@ -18,7 +18,7 @@ function App() {
       </div>
       <div className="px-4 mt-8
         lg:px-20  lg:text-xl 
-        2xl:px-80 2xl:text-2xl"
+        2xl:px-80"
       >
         <Home />
         <Expertise />
