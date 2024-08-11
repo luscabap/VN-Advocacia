@@ -28,7 +28,7 @@ export const Header = () => {
       </div>
       <Logo primario={true}/>
       <NavDesktop />
-      <FaCloudSun {...iconProps} className="2xl:w-1/6"/>
+      <FaCloudSun {...iconProps} className="2xl:w-1/6 cursor-pointer" />
     </header>
   );
 };
