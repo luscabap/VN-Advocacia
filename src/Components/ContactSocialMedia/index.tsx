@@ -1,4 +1,3 @@
-import { lighten } from "polished";
 import { FaInstagram, FaWhatsapp, FaLinkedin  } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 
