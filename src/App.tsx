@@ -9,10 +9,32 @@ import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
 import { ModalWhatsApp } from "./Components/ModalWhatsapp";
 import { OurTeam } from "./Components/OurTeam";
+import { useEffect, useState } from "react";
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme")
+    if (theme === "dark") setDarkMode(true)
+  }, [])
+
+  useEffect(() => {
+    if (darkMode){
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode])
+
+  const toggleTheme = () => {
+    setDarkMode(pv => !pv);
+  }
+
   return (
-    <div className="overflow-x-hidden">
-      <Header />
+    <div className="overflow-x-hidden bg-white dark:bg-zinc-800 dark:text-white">
+      <Header toggleTheme={toggleTheme} darkMode={darkMode} />
       <div className="z-40 pt-36 flex items-center justify-center" id="home">
         <CarouselImages />
       </div>
