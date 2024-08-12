@@ -1,3 +1,4 @@
+import { lighten } from "polished";
 import { FaInstagram, FaWhatsapp, FaLinkedin  } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 
@@ -8,7 +9,7 @@ interface IContactProps {
 
 export const ContactSocialMedia = ({ iconSize, iconColor }: IContactProps) => {
   return (
-    <div className="flex justify-evenly items-center">
+    <div className={`flex justify-evenly items-center text-terciaryColor`}>
         <a href="https://www.instagram.com/vnadvocacia_/" target="_blank" className=" w-32 flex justify-center py-1 rounded-md hover:text-primaryColor">
           <FaInstagram size={iconSize}  color={iconColor}/>
         </a>
