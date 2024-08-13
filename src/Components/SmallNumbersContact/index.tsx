@@ -2,7 +2,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 
-interface ISmallNumberContactProps {
+export interface ISmallNumberContactProps {
   iconSize: number,
   iconColor: string
 }

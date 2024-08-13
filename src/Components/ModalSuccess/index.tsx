@@ -2,7 +2,7 @@ import { FaCheck } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 import { Logo } from "../Logo";
 
-interface IModalSuccessProps {
+export interface IModalSuccessProps {
   togggleModal: () => void
 }
 

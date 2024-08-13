@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import { ContactSocialMedia } from "../ContactSocialMedia";
 import { Link } from "react-scroll";
 
-interface IMenuProps {
+export interface IMenuProps {
   toggleMenu: () => void;
 }
 

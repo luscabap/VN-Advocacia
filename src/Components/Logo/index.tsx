@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import logo from "/logo.png";
 
-interface ILogoProps {
+export interface ILogoProps {
   primario: boolean
 }
 
